@@ -1,0 +1,72 @@
+﻿@model NpoComputer.Nomad.Internal.Plugins.HelloDevicePlugin.ActivationData
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    a {
+      color: #1db4e3;
+    }
+
+    body {
+      background-color: #eaedee;
+      color: #2e3746;
+      font-family: "-apple-system",BlinkMacSystemFont,Arial,sans-serif;
+      font-size: 13px
+    }
+
+    table {
+      font-size: 13px;
+      line-height: 150%;
+      font-family: "-apple-system",BlinkMacSystemFont,Arial,sans-serif;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <table width="588" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td></td>
+      <td colspan="2" style="background: url(https://www.directum.ru/images/nomadmail/nomad_bg.png) no-repeat right top; height:124px">
+        <img src="https://www.directum.ru/images/nomadmail/nomad_logo.png" />
+      </td>
+    </tr>
+    <tr>
+      <td width="35"></td>
+      <td>
+        <h2 style="text-align:center">Добрый день, @Model.User.Name!</h2>
+        <p>
+          Вы только что выполнили вход в @Model.SystemName с нового мобильного устройства «@Model.Device.Name».<br />
+          Если это были не Вы, обязательно <a href="mailto:supportnpo@directum.ru">сообщите ОТО</a>.
+        </p>
+        <p>
+          Посмотреть список активных устройств, а также настроить папки для синхронизации можно с помощью сценария @Model.SystemName «<a href="http://directum.npo-comp.ru/reference.asp?sys=TEHKASNPO&compcode=COMPONENT_TOKEN&id=1910">Настройка работы с мобильным приложением</a>».<br />
+          Подробнее о приложении читайте на <a href="https://wiki.npo-comp.ru/index.php?title=Мобильные_решения._Начало_работы">Wiki</a> или в инструкции «<a href="http://help.npo-comp.ru/NOMAD/Jazz-A/Быстрый%20старт.PDF">@Model.Device.AppVersion</a>».
+        </p>
+        <p>
+          Если у вас есть пожелания и идеи по развитию, обязательно <a href="mailto:nomad.feedback@directum.ru">сообщите нам</a>.
+        </p>
+      </td>
+      <td width="35"></td>
+    </tr>
+    <tr style="height: 250px;">
+      <td colspan="3"><img src="https://www.directum.ru/images/nomadmail/nomad_image.jpg" /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="line-height: 120%; font-size:75%; text-align:center; color:#ccc">
+        Спасибо, что присоединились, желаем приятной и эффективной работы!<br />
+        Искренне ваши, команда разработки <a style="color:#ccc" href="https://blog.directum.ru/group7">мобильных решений</a>.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <br><center><img src="https://www.directum.ru/images/nomadmail/nomad_logo-n.png" /></center><br><br>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>
